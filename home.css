@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,48 +9,53 @@
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     background-image: url("https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
   
+  /* Navbar styling */
   .navbar {
-    background-color: #333;
-    color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .nav-logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
   }
   
   .nav-links {
-    list-style: none;
+    list-style-type: none;
     display: flex;
   }
   
   .nav-links li {
-    margin-left: 20px;
+    margin: 0 15px;
   }
   
   .nav-links a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: #4CAF50; /* Eco-friendly green */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .nav-links a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight zoom effect on hover */
   }
   
+  .nav-links a:active {
+    background-color: #3e8e41; /* Darker color for active state */
+  }
+  
+  /* Content Section */
   .content {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
+    color:#3e8e41;
+    font-size: 7vh;
+    font-family: "Playfair Display", serif;
   }
   
