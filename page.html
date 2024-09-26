@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Progress</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .progress-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 3px solid #0c5f30;
+        }
+        
+        .username {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .points-earned {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #5fa30c;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .quote {
+            margin-top: 40px;
+            font-style: italic;
+            color: #333;
+        }
+        
+        .quote::before {
+            content: "“";
+            font-size: 2rem;
+        }
+        
+        .quote::after {
+            content: "”";
+            font-size: 2rem;
+        }
+
+        .reward-cards-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        
+        .reward-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 23%; /* Adjust for four cards */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .reward-card h5 {
+            font-size: 1rem;
+            color: #0c5f30;
+            margin-bottom: 10px;
+        }
+        
+        .reward-card p {
+            color: #333;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-container">
+        <!-- Profile Picture -->
+        <img src="./Images/pngwing.com.png" alt="Profile Picture" class="profile-picture">
+        
+        <!-- Badge -->
+        <img src="./Images/klipartz.com (1).png" alt="Badge Icon" class="badge">
+
+        <!-- Username -->
+        <div class="username">JohnDoe123</div>
+        
+        <!-- Points Earned -->
+        <div class="points-earned">Points Earned: 250</div>
+        
+        <!-- Clean Energy Quote -->
+        <div class="quote">"Clean energy is the foundation for a sustainable future."</div>
+        
+        <!-- Reward Cards Section -->
+        <div class="reward-cards-container">
+            <!-- Card 1 -->
+            <div class="reward-card">
+                <h5>14,000 Points</h5>
+                <p>Get the Elite Recycler Badge</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="reward-card">
+                <h5>3,000 Points</h5>
+                <p>Get the Alchemist Recycler Badge</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="reward-card">
+                <h5>5,000 Points</h5>
+                <p>Get the Alchemist Recycler Badge</p>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="reward-card">
+                <h5>7,000 Points</h5>
+                <p>Get the Gold Recycler Badge</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Recycle Champion - Making the World Greener
+    </footer>
+
+</body>
+</html>

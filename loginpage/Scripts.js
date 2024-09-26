@@ -41,7 +41,7 @@ function login() {
     } else if(email === "" || password === ""){
         console.log("Please fill in both email and password");
     } else{
-        window.location.href = "signup.html";
+        window.location.href = "../page.html";
     }   
 }
 function signup() {
