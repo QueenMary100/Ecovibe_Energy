@@ -636,3 +636,55 @@ button[type="submit"] {
     100% { transform: rotate(360deg); }
 }
 
+
+
+/* newsec */
+.partners-section {
+    padding: 60px 0; /* Adjust padding as needed */
+    background-color: #f9f9f9; /* Background color for the section */
+}
+
+.card {
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.partner-img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.card-title {
+    font-weight: bold; /* Bold text for the partner name */
+    margin-top: 10px; /* Space between image and text */
+}
+.cen{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slightly shift up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Hidden by default */
+    animation: fadeIn 1s ease-out forwards; /* Animation when element becomes visible */
+}
+
