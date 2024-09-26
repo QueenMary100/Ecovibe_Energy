@@ -15,7 +15,14 @@ body {
     background-size: cover;
     width:auto;
     height: 85vh;
+    animation: fadeIn 1s forwards; 
+    font-size: 4vh;
     
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End fully visible */
+    }
 }
 #About {
     background-color: #f7f7f7;
@@ -445,7 +452,7 @@ button[type="submit"] {
     max-width: 600px; /* Limit width for readability */
     padding: 20px; /* Add some padding */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home-contact h1 {
@@ -455,7 +462,8 @@ button[type="submit"] {
 
 .home-contact p {
     font-size: 1.2rem; /* Adjust paragraph size */
-    color: #333; /* Darker color for contrast */
+    color:teal; /* Darker color for contrast */
+    background-color: rgba(255,255,255,0.5);
 }
 
 .home-contact button {
@@ -510,5 +518,121 @@ button[type="submit"] {
 .navbar-nav .nav-link i {
     margin-right: 8px; /* Space between icon and text */
     font-size: 1.2em; /* Increase icon size */
+}
+
+#ContactUs {
+    padding: 30px 10px; /* Reduced padding */
+    color: white;
+    text-align: center;
+}
+
+#ContactUs h1 {
+    color: #fff;
+    font-size: 2.5em; /* Slightly smaller heading */
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    max-width: 800px; /* Limit width for a cleaner look */
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px; /* Space between info and form */
+    text-align: left;
+    color: white;
+}
+
+.contact-info h2 {
+    font-size: 1.8em; /* Reduced font size */
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: rgba(239, 230, 230, 0.1);
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px; /* Adjusted border radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Smaller font size */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333; /* Darker text for contrast */
+}
+
+button[type="submit"] {
+    background-color: #028C52;
+    color: white;
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 1em; /* Smaller button text size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack info and form on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .contact-info {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        text-align: center; /* Center text */
+    }
+}
+
+/* spinneer */
+.about-content {
+    position: relative; /* Enable positioning for child elements */
+}
+
+.spinner-container {
+    position: absolute;
+    width: 100%; /* Take full width of the parent */
+    height: 50%; /* Take full height of the parent */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    display: flex; /* Use flexbox for positioning */
+    justify-content: space-between; /* Space them evenly */
+    margin-top: 38rem;
+}
+
+.spinner {
+    width: 100px; /* Adjust the size as needed */
+    animation: spin 10s linear infinite; 
+    height: auto;/* Animation for spinning */
+    object-fit: contain;
+}
+
+.left {
+    transform: translate(-50%, 0); /* Shift left image */
+}
+
+.right {
+    transform: translate(50%, 0); /* Shift right image */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
