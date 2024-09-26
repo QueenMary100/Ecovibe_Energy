@@ -1,7 +1,7 @@
 /* General body styling */
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Playfair Display", serif;;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 #Home{
-    background-image: url(./Images/download.jpeg);
+    background-image: url("https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -352,6 +352,37 @@ button[type="submit"] {
         text-align: center;
     }
 }
+/* form */
+/* Adjustments for the Contact Us Form */
+.contact-form {
+    flex: 1;
+    max-width: 500px; /* Set a max width for smaller size */
+    background-color: rgba(239, 230, 230, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduce bottom margin for form groups */
+}
+
+.form-group label {
+    font-size: 1.1em; /* Slightly smaller label font size */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding for inputs */
+    font-size: 1em; /* Smaller font size */
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Reduced padding for the submit button */
+    font-size: 1em; /* Smaller button text size */
+}
 
 
 
@@ -397,4 +428,87 @@ button[type="submit"] {
 
 
 
+
+/* style */
+/* Home Section */
+#Home {
+    display: flex; /* Enable flexbox on the section */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for better visibility */
+    text-align: center; /* Center text within the div */
+}
+
+.home-contact {
+    /* Optional styling for the content div */
+    max-width: 600px; /* Limit width for readability */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.home-contact h1 {
+    font-size: 2.5em; /* Adjust heading size */
+    color: #4CAF50; /* Eco-friendly green color */
+}
+
+.home-contact p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    color: #333; /* Darker color for contrast */
+}
+
+.home-contact button {
+    background-color: #4CAF50; /* Eco-friendly green */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Button text size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.home-contact button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* Navbar Styles */
+.navbar {
+    /* background-color: #028C52; Change navbar background color */
+    padding: 10px 20px; /* Add some padding */
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: teal !important; /* Make brand text white */
+    font-size: 1.5em; /* Increase brand font size */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(22, 141, 44) !important; /* Set text color for links */
+    margin-right: 20px; /* Add spacing between links */
+    font-size: 1.1em; /* Adjust font size for links */
+    font-weight: 700;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #03a56b !important; /* Change color on hover */
+}
+
+/* Responsive Navbar Toggler */
+.navbar-toggler {
+    background-color: #03a56b; /* Change toggler background color */
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+/* Icon Styling (Font Awesome) */
+.navbar-nav .nav-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em; /* Increase icon size */
+}
 

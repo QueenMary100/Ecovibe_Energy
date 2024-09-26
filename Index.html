@@ -6,6 +6,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>BioGass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMy2ff/p5S/0Ff4LM5Y2mG5z1g+z4Q1Zd5v+dT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -16,22 +20,31 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-              <a class="nav-link" href="#About">About</a>
-              <a class="nav-link" href="#">How it works</a>
-              <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link active" aria-current="page" href="#Home"><i class="fas fa-home"></i>Home</a>
+                <a class="nav-link" href="#About"><i class="fas fa-info-circle"></i>About</a>
+                <a class="nav-link" href="#"><i class="fas fa-cogs"></i>How it works</a>
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact Us</a>
+                
             </div>
           </div>
         </div>
       </nav>
 
-    <section id="Home">
+    <!-- <section id="Home">
         <div class="home-conatc">
             <h1>Welcome to Biogas Energy Solutions</h1>
             <p>Transforming Waste into Renewable Energy</p>
         <button type="submit"></button>
         </div>
+    </section> -->
+    <section id="Home">
+        <div class="home-contact">
+            <h1>Welcome to Biogas Energy Solutions</h1>
+            <p>Transforming Waste into Renewable Energy</p>
+            <button type="submit">Get Started</button> <!-- Add button text for clarity -->
+        </div>
     </section>
+    
     <section id="About">
         <h1>About Us</h1>
         <div class="about-content">
@@ -63,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section id="ContactUs">
+    <!-- <section id="ContactUs">
         <h1>Contact Us</h1>
         <div class="contact-container">
     
@@ -85,7 +98,31 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> --><section id="ContactUs">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
     <footer id="footer">
         <div class="footer-container">
             <!-- Footer logo and company info -->
