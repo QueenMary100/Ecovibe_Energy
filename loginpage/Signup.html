@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>ROLAX Signup</title>
+    <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <div class="container">
+        <img alt="Logo" class="logo" height="80" src="Rolaxlogo.jpeg" width="80"/>
+        <h1>
+            Create an Account
+        </h1>
+        <p>
+            Empowering Your Pharmacy, One Prescription at a Time.
+        </p>
+        <input id="email" placeholder="write your email" type="text"/>
+        <input id="phoneNumber" placeholder="write your phonenumber" type="text"/>
+        <input id="password" placeholder="write your password" type="password"/>
+        <input id="confirm-password" placeholder="confirm your password" type="password"/>
+
+        <div class="links">
+            <p>Already have an account ?<a href="Login.html">Log In
+            </a>
+            </p>
+        </div>
+        <button class="signup-btn" type="submit" onclick="signup()">
+            Sign up
+        </button>
+        </div>
+    </body>
+    <script src="Scripts.js"></script>
+    <script> // Africa's Talking API setup const AfricasTalking = require('africastalking')({ apiKey: "atsk_aa2a23bbc0de3393cd188373c5155e176e8a9c791f904b3795f71c4f3fdd849a6d4f7e14", // Replace with your API Key username: "EMID" // Replace with your username }); const sms = AfricasTalking.SMS; // Function to send SMS function sendSMS(event) { event.preventDefault(); // Prevent form from submitting normally // Fetch phone number from form input const phoneNumber = document.getElementById('phoneNumber').value; // Set message details const recipients = [phoneNumber]; const message = "Welcome to Watt Watt Energies! ⚡ We're thrilled to have you on board as we work together to power a cleaner, greener future. Explore, engage, and let's make sustainable energy a reality!"; const sender = "20880"; // Send SMS via Africa's Talking API sms.send({ to: recipients, message: message, from: sender }) .then(response => { console.log("Message sent successfully:", response); alert("SMS sent successfully to " + phoneNumber); }) .catch(error => { console.error("Error sending message:", error); alert("Error sending SMS: " + error.message); }); } </script>
+</html>
